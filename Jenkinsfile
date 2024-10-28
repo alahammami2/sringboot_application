@@ -11,7 +11,7 @@ deleteDir()
 }
 stage ("Clone repo"){
 steps {
-sh "git clone https://github.com/MaBouz/exp1-spring.git"
+sh "git clone https://github.com/alahammami2/sringboot_application.git"
 }
 }
 stage ("Generate backend image") {
