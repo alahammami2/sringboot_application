@@ -17,7 +17,7 @@ sh "git clone https://github.com/alahammami2/sringboot_application.git"
 stage ("Generate backend image") {
 steps {
 dir ("exp-spring"){
-sh "avn clean install"
+sh "mvn clean install"
 sh "docker build-t docexp1-spring ."
 }
 }
