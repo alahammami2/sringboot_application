@@ -10,7 +10,7 @@ deleteDir()
 }
 }
 stage ("Clone repo"){
-steps (
+steps {
 sh "git clone https://github.com/MaBouz/exp1-spring.git"
 }
 }
