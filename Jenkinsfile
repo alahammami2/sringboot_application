@@ -23,7 +23,7 @@ sh "docker build-t docexp1-spring."
 }
 }
 stage ("Run docker compose") {
-steps (
+steps {
 dir("exp1-spring"){
 sh "docker compose up-d"
 }
