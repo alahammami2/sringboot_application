@@ -18,14 +18,14 @@ stage ("Generate backend image") {
 steps {
 dir ("exp-spring"){
 sh "avn clean install"
-sh "docker build-t docexp1-spring."
+sh "docker build-t docexp1-spring ."
 }
 }
 }
 stage ("Run docker compose") {
 steps {
 dir("exp-spring"){
-sh "docker compose up-d"
+sh "docker compose up -d"
 }
 }
 }
